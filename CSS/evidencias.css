@@ -1,0 +1,109 @@
+body {
+margin: 0;
+padding: 40px 60px;
+font-family: 'Poppins', sans-serif;
+background-image: url(/Proyecto/IMG/comunicacion-img1.png);
+color: #4a3f3f;
+}
+
+h1 {
+color: #faf7f4;
+font-size: 32px;
+}
+
+h2 {
+color: #140b07;
+margin-top: 40px;
+}
+
+h3 {
+color: #c9beb4;
+margin-top: 20px;
+}
+
+p {
+font-size: 16px;
+line-height: 1.7;
+}
+
+ul {
+padding-left: 20px;
+}
+
+ul li {
+margin-bottom: 10px;
+font-size: 16px;
+}
+
+strong {
+color: #b5562b;
+}
+
+hr {
+border: none;
+border-top: 2px solid #cec1b7;
+margin: 40px 0;
+}
+
+/* Hace que el body y html usen todo el alto de la pantalla */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Wrapper que estira el contenido */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El main crece para empujar el footer abajo */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* El iframe del header y footer se comportan como bloques */
+.header-frame,
+.footer-frame {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+/* Opcional: altura específica para el footer */
+.footer-frame {
+    height: 120px; 
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 40px 0;
+    box-shadow: #4a3f3f 0px 0px 10px 0px;
+}
+
+.card {
+    background: #f8f4f4;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%; /* Aproximadamente 4 por fila con gap */
+    min-width: 220px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
